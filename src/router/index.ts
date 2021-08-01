@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
+import Analysis from '@/views/Analysis.vue'
 
 Vue.use(VueRouter)
 
@@ -11,12 +12,13 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/analysis',
+    name: "nowAnalysis",
+    redirect: {name: 'Analysis', params: {key: `${(new Date().getUTCMonth()+1 < 10)?('0'):('')}${new Date().getUTCMonth()+1}-${new Date().getUTCFullYear()}`}}
+  }, {
+    path: '/analysis/:key',
+    name: 'Analysis',
+    component: Analysis
   }
 ]
 

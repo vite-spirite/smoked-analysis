@@ -8,8 +8,22 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/android": "^3.1.2",
+    "@capacitor/app": "^1.0.2",
+    "@capacitor/cli": "^3.1.2",
+    "@capacitor/core": "^3.1.2",
+    "@capacitor/local-notifications": "^1.0.3",
+    "@capacitor/storage": "^1.0.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@robingenz/capacitor-background-task": "^1.0.0",
+    "@vue/composition-api": "^1.0.4",
+    "apexcharts": "^3.27.3",
+    "buefy": "^0.9.8",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-apexcharts": "^1.6.2",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.2.0"

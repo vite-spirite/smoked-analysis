@@ -1,0 +1,7 @@
+{
+	"appId": "com.vitespirite.smokedanalysis",
+	"appName": "Smoked Analysis",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"backgroundColor": "#ffffff"
+}
